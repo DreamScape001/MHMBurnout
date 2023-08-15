@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/Home">
+
+    <fragment
+        android:id="@+id/about_us"
+        android:name="com.burnout.mhmburnout.fragments.AboutUsFragment"
+        android:label="fragment_about_us"
+        tools:layout="@layout/fragment_about_us" />
+    <fragment
+        android:id="@+id/Learn"
+        android:name="com.burnout.mhmburnout.fragments.LearnMoreFragment"
+        android:label="fragment_learn_more" />
+    <fragment
+        android:id="@+id/moodChecker"
+        android:name="com.burnout.mhmburnout.fragments.MoodCheckerFragment"
+        android:label="fragment_mood_checker">
+        <action
+            android:id="@+id/action_moodChecker_to_homeFragment"
+            app:destination="@id/Home" />
+    </fragment>
+    <fragment
+        android:id="@+id/Home"
+        android:name="com.burnout.mhmburnout.fragments.HomeFragment"
+        android:label="fragment_home">
+        <action
+            android:id="@+id/action_homeFragment_to_about_us"
+            app:destination="@id/about_us" />
+        <action
+            android:id="@+id/action_homeFragment_to_Learn"
+            app:destination="@id/Learn" />
+        <action
+            android:id="@+id/action_homeFragment_to_moodChecker"
+            app:destination="@id/moodChecker" />
+        <argument
+            android:name="mood"
+            app:argType="string"
+            app:nullable="true" />
+    </fragment>
+    <argument
+        android:name="mood" />
+</navigation>

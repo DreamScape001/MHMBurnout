@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "53314336063",
+    "project_id": "mhm-burnout",
+    "storage_bucket": "mhm-burnout.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:53314336063:android:51b9b33166105d16a10f8a",
+        "android_client_info": {
+          "package_name": "com.burnout.mhmburnout"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "53314336063-cikqldms48b1l1rnr5afdgrch47pssh3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyArrBXjnG6Hnprwo08U1ZnhPG4CL6jiZ8I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "53314336063-cikqldms48b1l1rnr5afdgrch47pssh3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
